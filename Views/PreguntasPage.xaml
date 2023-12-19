@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenParcial2.Views.PreguntasPage"
+             Title="PreguntasPage">
+    <StackLayout Margin="20">
+        <Label Text="¿Cuánto es 2 + 2?" />
+        <Entry Text="{Binding RespuestaPregunta1}" />
+
+        <Label Text="¿Cuál es el valor de pi?" />
+        <Entry Text="{Binding RespuestaPregunta2}" />
+
+        <Label Text="¿Cuánto es 10 - 5?" />
+        <Entry Text="{Binding RespuestaPregunta3}" />
+
+        <Button Text="Validar Respuestas" Command="{Binding ValidarRespuestasCommand}" />
+    </StackLayout>
+</ContentPage>
